@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+
+#header {
+    background-color: #3db6d1;
+    padding: 20px;
+    text-align:center;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.inicio {
+    margin: 20px;
+    text-align: center;
+}
+
+.caja-discusion {
+    background-color: #e2e2e2;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formulario-contacto {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.boton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+
+nav ul a:hover {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.imagen-inicio {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.imagen-inicio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Diseño para pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+    .inicio {
+        margin: 20px;
+    }
+
+    .caja-discusion {
+        margin: 15px;
+    }
+
+    .formulario-contacto {
+        margin: 20px auto;
+    }
+
+    #header, #footer {
+        padding: 20px;
+    }
+}
+
+/* Diseño para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .inicio {
+        margin: 15px;
+    }
+
+    .caja-discusion {
+        margin: 15px;
+    }
+
+    .formulario-contacto {
+        margin: 20px auto;
+    }
+
+    #header, #footer {
+        padding: 15px;
+    }
+}
+
+/* Diseño para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+    .inicio {
+        margin: 10px;
+    }
+
+    .caja-discusion {
+        margin: 10px 0;
+    }
+
+    .formulario-contacto {
+        margin: 10px auto;
+    }
+
+    #header, #footer {
+        padding: 10px;
+    }
+}
