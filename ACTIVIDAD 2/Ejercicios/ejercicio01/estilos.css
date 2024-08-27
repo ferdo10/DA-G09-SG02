@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+
+#header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align:center;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.inicio {
+    margin: 20px;
+    text-align: center;
+}
+
+.caja-discusion {
+    background-color: #e2e2e2;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formulario-contacto {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.boton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
