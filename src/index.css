@@ -1,0 +1,112 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.container {
+  background-color: #1ad69b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"],
+button {
+  padding: 10px;
+  background-color: #28a7a7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #28a7a7;
+}
+
+
+
+.resumen-cita {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.resumen-cita p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.resumen-cita p span {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.container > * {
+  margin-bottom: 20px;
+}
+
+select {
+  cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    font-size: 14px;
+  }
+
+  input[type="submit"],
+  button {
+    font-size: 14px;
+  }
+}
+
