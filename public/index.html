@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <link rel="stylesheet" href="/formulario.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <h1>Pastas y Copteles</h1>
+            <img src="logorest.jpg" alt="Imagen del Restaurante" class="restaurant-image">
+        </div>
+        <div class="right-container">
+            <h1>Reservar Mesa</h1>
+            <form action="/reservar" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="form-group">
+                    <label for="personas">Número de Personas:</label>
+                    <input type="number" id="personas" name="personas" required min="1">
+                </div>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
