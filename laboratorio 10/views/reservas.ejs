@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/citas.css">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Lista de Reservas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Numero de Personas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% reservas.forEach(reserva => { %>
+                <tr>
+                    <td><%= reserva.id %></td>
+                    <td><%= reserva.nombre %></td>
+                    <td><%= reserva.fecha %></td>
+                    <td><%= reserva.hora %></td>
+                    <td><%= reserva.personas %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <a href="/">ir al inicio</a>
+</body>
+</html>
